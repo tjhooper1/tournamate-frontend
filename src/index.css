@@ -1,7 +1,7 @@
 /* import font style */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-:root{
+:root {
   /* variables */
   /* --primary-color: #2ecc71;
   --secondary-color: #27ae60;
@@ -10,7 +10,6 @@
   --shadow-color: rgba(0,0,0,0.2);
   --font-light-color: #f1f1f1;
   --font-dark-color: #333; */
-  
 }
 
 /* body{
@@ -21,72 +20,68 @@
   color: var(--font-light-color);
 } */
 
-
 .bracket {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: flex-start;
+  height: 100%;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 .round {
   display: flex;
+  flex: 1 1 auto;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   padding: 1rem;
+  gap: 2rem;
+  position: relative;
 }
+
+
+
+/* .round::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-left: 2px solid #999;
+} */
 
 .match {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   position: relative;
   margin: 1rem 0;
 }
 
+/* .match::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 100%;
+  border-top: 2px solid #999;
+} */
+
+/* .match::after {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  width: 2rem;
+  border-bottom: 2px solid #999;
+} */
+
 .team {
   padding: 0.5rem;
+  width: 160px;
   border: 1px solid #ccc;
   background-color: #f9f9f9;
   margin: 0 0.5rem;
   text-align: center;
 }
-
-/* Lines */
-/* .match::before,
-.match::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  width: 2px;
-  height: 2rem;
-  background-color: #999;
-} */
-
-/* .match::before {
-  top: -2rem;
-} */
-
-/* .match::after {
-  bottom: -2rem;
-} */
-
-/* .team:first-child::after,
-.team:last-child::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 50%;
-  height: 2px;
-  background-color: #999;
-} */
-
-/* .team:first-child::after {
-  right: 50%;
-}
-
-.team:last-child::before {
-  left: 50%;
-} */
 
 

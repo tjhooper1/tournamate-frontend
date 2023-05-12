@@ -1,11 +1,11 @@
 import BracketComponent from './components/bracket/BracketComponent';
-import { sampleTournament } from './sampleData/tournamentSample1';
+import { sampleTournament, sampleTournament2, sampleTournament3 } from './sampleData/tournamentSample1';
 import './App.css';
 
 function App(): JSX.Element {
   return (
-    <div className="container-fluid">
-      <BracketComponent tournament={sampleTournament} />
+    <div className="container-fluid parent">
+      <BracketComponent tournament={sampleTournament3} />
     </div>
   );
 }

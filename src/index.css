@@ -3,28 +3,27 @@
 
 :root {
   /* variables */
-  /* --primary-color: #2ecc71;
-  --secondary-color: #27ae60;
-  --dark-color: #34495e;
+  --primary-color: #74f0ed;
+  --secondary-color: #ea445a;
+  --dark-color: #070e1d;
   --light-color: #fff;
-  --shadow-color: rgba(0,0,0,0.2);
+  --shadow-color: rgba(0, 0, 0, 0.2);
   --font-light-color: #f1f1f1;
-  --font-dark-color: #333; */
+  --font-dark-color: #333;
 }
 
-/* body{
+body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins';
   background: var(--dark-color);
   color: var(--font-light-color);
-} */
+}
 
 .bracket {
   display: flex;
   height: 100%;
   flex-wrap: nowrap;
-  overflow-x: auto;
 }
 
 .round {
@@ -34,54 +33,29 @@
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
-  gap: 2rem;
+  gap: 1rem;
   position: relative;
 }
-
-
-
-/* .round::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  border-left: 2px solid #999;
-} */
 
 .match {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  margin: 1rem 0;
 }
 
-/* .match::before {
-  content: '';
+.match-line {
   position: absolute;
-  top: 50%;
-  left: 0px;
-  width: 100%;
-  border-top: 2px solid #999;
-} */
-
-/* .match::after {
-  content: '';
-  position: absolute;
-  bottom: 50%;
-  left: 0;
-  width: 2rem;
-  border-bottom: 2px solid #999;
-} */
+  top: 0;
+  right: -100%;
+  width: 80px;
+  height: 100%;
+}
 
 .team {
   padding: 0.5rem;
-  width: 160px;
   border: 1px solid #ccc;
-  background-color: #f9f9f9;
-  margin: 0 0.5rem;
+  background-color: var(--primary-color);
   text-align: center;
+  color: var(--font-dark-color);
 }
-
-
